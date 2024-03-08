@@ -1,0 +1,15 @@
+
+module MyInverter (output reg Y, input A, B);
+//xor get
+    always @ (A or B) begin
+        if (A == 1'b0 & B == 1'b0) begin
+            Y = 1'b0;
+        end
+        else if (A == 1'b1 & B == 1'b1) begin
+            Y = 1'b0;
+        end
+        else begin
+            Y = 1'b1;
+        end
+    end
+endmodule
