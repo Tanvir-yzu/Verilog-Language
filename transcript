@@ -1,0 +1,16 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# Loading project MyNewProject
+vsim work.MyInverter
+# vsim work.MyInverter 
+# Start time: 16:03:26 on Mar 08,2024
+# Loading work.MyInverter
+add wave -position insertpoint sim:/MyInverter/*
+force -freeze sim:/MyInverter/B 0 0, 1 {50 ps} -r 100
+force -freeze sim:/MyInverter/A 0 0, 1 {50 ps} -r 100
+run
+force -freeze sim:/MyInverter/B 0 0, 0 {50 ps} -r 100
+run
+run
+run
+# End time: 16:30:31 on Mar 08,2024, Elapsed time: 0:27:05
+# Errors: 0, Warnings: 0
